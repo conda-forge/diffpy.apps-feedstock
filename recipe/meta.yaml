@@ -26,9 +26,8 @@ requirements:
 
   run:
     - python >={{ python_min }}
-    - diffpy.srfit
+    - diffpy.cmi
     - diffpy.srreal
-    - diffpy.structure
     - numpy
     - scipy
     - textx
