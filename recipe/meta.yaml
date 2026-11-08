@@ -1,5 +1,5 @@
 {% set name = "diffpy.apps" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.2" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,16 +7,16 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/d/diffpy_apps/diffpy_apps-0.1.1.tar.gz
-  sha256: bcdcb915c7dbe839436ee8ed2fe0bfd314e607979d515c946ff85c10b203c67f
+  url: https://files.pythonhosted.org/packages/source/d/diffpy_apps/diffpy_apps-{{ version }}.tar.gz
+  sha256: eb27ab8e17b8e05d78dfebe3a0662d44edd910a8ef9ef192549445a5b0f9f3f2
 
 build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
   entry_points:
-    -  diffpy-app = diffpy.apps.apps:main
-    -  diffpy-apps = diffpy.apps.apps:main
+    - diffpy-app = diffpy.apps.apps:main
+    - diffpy-apps = diffpy.apps.apps:main
 
 requirements:
   host:
