@@ -37,6 +37,7 @@ requirements:
     - pyyaml
     - networkx
     - mcp
+    - rich
 
 
 test:
